@@ -11,6 +11,7 @@ const app=express();
 const upload=multer({storage:multer.memoryStorage(),limits:{fileSize:25*1024*1024}});
 
 app.use(express.static(path.join(__dirname,'public')));
+app.get('/', (req,res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 app.post('/api/generate',upload.single('image'),async(req,res)=>{
   try{
