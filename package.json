@@ -1,0 +1,12 @@
+{
+  "name":"cineai-studio-v2",
+  "version":"2.0.0",
+  "type":"module",
+  "scripts":{"start":"node server.js"},
+  "dependencies":{
+    "@fal-ai/client":"latest",
+    "dotenv":"latest",
+    "express":"latest",
+    "multer":"latest"
+  }
+}
